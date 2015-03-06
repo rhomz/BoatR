@@ -114,7 +114,7 @@ private Button done;
         * May-error nullpointer dito
         * */
       //try{
-           Init();
+
 //           setData();
        //}
        /*catch (Exception e){
@@ -122,8 +122,15 @@ private Button done;
        }*/
         Toast.makeText(getActivity(), BoatrSingleton.getInstance().getBoatTonBreadth().toString(),Toast.LENGTH_SHORT).show();
     }
-    public void Init(){
-        mfvrNo = (TextView)getActivity().findViewById(R.id.txtview_mfvrno);
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        Init(view);
+    }
+
+    public void Init(View view){
+        /*mfvrNo = (TextView)getActivity().findViewById(R.id.txtview_mfvrno);
         typeOfRegistration = (TextView)getActivity().findViewById(R.id.txtview_typeofregistration);
         dateOfApplication = (TextView)getActivity().findViewById(R.id.txtview_date);
         nameOfOwner = (TextView)getActivity().findViewById(R.id.txtview_nameofowner);
@@ -145,9 +152,33 @@ private Button done;
         registeredBreadth = (TextView)getActivity().findViewById(R.id.txtview_rbreadth);
         registeredDepth = (TextView)getActivity().findViewById(R.id.txtview_rdepth);
         grossTonnage = (TextView)getActivity().findViewById(R.id.txtview_gtonnage);
-        netTonnage = (TextView)getActivity().findViewById(R.id.txtview_ntonnage);
+        netTonnage = (TextView)getActivity().findViewById(R.id.txtview_ntonnage);*/
 
-        mfvrNo.setText("asdf");
+        mfvrNo = (TextView)view.findViewById(R.id.txtview_mfvrno);
+        typeOfRegistration = (TextView)view.findViewById(R.id.txtview_typeofregistration);
+        dateOfApplication = (TextView)view.findViewById(R.id.txtview_date);
+        nameOfOwner = (TextView)view.findViewById(R.id.txtview_nameofowner);
+        address = (TextView)view.findViewById(R.id.txtview_address);
+        homeport = (TextView)view.findViewById(R.id.txtview_homeport);
+        nameOfFishingVessel = (TextView)view.findViewById(R.id.txtview_fishingvessel);
+        placeBuilt = (TextView)view.findViewById(R.id.txtview_placebuilt);
+        yearBuilt = (TextView)view.findViewById(R.id.txtview_yearbuilt);
+        vesselType = (TextView)view.findViewById(R.id.txtview_vesseltype);
+        materialUsed = (TextView)view.findViewById(R.id.txtview_materialused);
+        engineMake = (TextView)view.findViewById(R.id.txtview_enginemake);
+        serialNumber = (TextView)view.findViewById(R.id.txtview_serialnumber);
+        horsePower = (TextView)view.findViewById(R.id.txtview_horsepower);
+        fishingGears = (TextView)view.findViewById(R.id.txtview_classification);
+        tonnageLength = (TextView)view.findViewById(R.id.txtview_tlength);
+        tonnageBreadth = (TextView)view.findViewById(R.id.txtview_tbreadth);
+        tonnageDepth = (TextView)view.findViewById(R.id.txtview_tdepth);
+        registeredLength = (TextView)view.findViewById(R.id.txtview_rlength);
+        registeredBreadth = (TextView)view.findViewById(R.id.txtview_rbreadth);
+        registeredDepth = (TextView)view.findViewById(R.id.txtview_rdepth);
+        grossTonnage = (TextView)view.findViewById(R.id.txtview_gtonnage);
+        netTonnage = (TextView)view.findViewById(R.id.txtview_ntonnage);
+
+        mfvrNo.setText("WEHEHEH :)");
     }
     public void setData(){
         typeOfRegistration.setText(BoatrSingleton.getInstance().getBoatTypeOfRegistration());

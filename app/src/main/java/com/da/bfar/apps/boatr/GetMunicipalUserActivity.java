@@ -36,8 +36,8 @@ import java.util.List;
 
 public class GetMunicipalUserActivity extends ActionBarActivity {
 
-    String temp_url = "http://192.168.1.122:82/api/user.php";
-    String check_url = "http://192.168.1.122:82/api/sender.php";
+    String temp_url = "http://192.168.1.106:82/api/user.php";
+    String check_url = "http://192.168.1.106:82/api/sender.php";
     EditText municipalCode;
     Button button_submit;
     Button button_logout;

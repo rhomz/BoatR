@@ -71,7 +71,7 @@ public class FragmentHome extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        button = (Button)view.findViewById(R.id.button);
+        /*button = (Button)view.findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,9 +79,8 @@ public class FragmentHome extends Fragment {
                 BoatRegistration registration =new BoatRegistration();
                 new GlobalAsyncTask(registration,getActivity()).execute();
 
-
             }
-        });
+        });*/
         return view;
     }
 

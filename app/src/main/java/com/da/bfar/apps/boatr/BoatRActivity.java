@@ -76,10 +76,10 @@ public class BoatRActivity extends ActionBarActivity
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
      */
     //url for check server
-    String check_url = "http://192.168.1.122:82/api/sender.php";
+    String check_url = "http://192.168.1.106:82/api/sender.php";
 
     //url for fisherfolk data collection
-    String temp_url = "http://192.168.1.122:82/api/fisherfolk.php";
+    String temp_url = "http://192.168.1.106:82/api/fisherfolk.php";
 
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private BoatRegistration registration =new BoatRegistration();

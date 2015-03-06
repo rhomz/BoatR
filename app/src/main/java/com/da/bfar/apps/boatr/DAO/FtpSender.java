@@ -48,7 +48,10 @@ public class FtpSender {
     UseDBTables useDBTables;
 
 
-    String JsonUrl = "http://122.55.5.206:83/api/"; //for testing bfar public api
+    //String JsonUrl = "http://122.55.5.206:83/api/"; //for testing bfar public api
+
+    //local api ni aries
+    String JsonUrl = "http://192.168.1.106/api/";
 
     public FtpSender(Context context, Object object) {
         this.context = context;
@@ -115,13 +118,21 @@ public class FtpSender {
 
         try {
             con = new FTPClient();
-            con.connect("122.55.5.206", 21); //122.55.5.206
+            //con.connect("122.55.5.206", 21); //122.55.5.206
                                              //ftpmanager
                                              //bf@rf+p
-            if (con.login("ftpmanager", "bf@rf+p")) {
+
+            //local api
+            con.connect("192.168.1.106", 21);
+
+            /*if (con.login("ftpmanager", "bf@rf+p")) {
+                con.enterLocalPassiveMode(); // important!
+                con.setFileType(FTP.BINARY_FILE_TYPE);*/
+
+            //lcoal api
+            if (con.login("bfar-pc", "abc123")) {
                 con.enterLocalPassiveMode(); // important!
                 con.setFileType(FTP.BINARY_FILE_TYPE);
-
 
                 if (num == 1) {
                     File files[] = Environment.getExternalStorageDirectory().listFiles();

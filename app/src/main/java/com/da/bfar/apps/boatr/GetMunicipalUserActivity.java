@@ -98,7 +98,6 @@ public class GetMunicipalUserActivity extends ActionBarActivity {
 
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -172,6 +171,7 @@ public class GetMunicipalUserActivity extends ActionBarActivity {
             super.onPreExecute();
             progressDialog = new ProgressDialog(context);
             progressDialog.setTitle("Checking Internet connection...");
+            progressDialog.setCancelable(false);
             progressDialog.show();
         }
 
@@ -214,6 +214,7 @@ public class GetMunicipalUserActivity extends ActionBarActivity {
             super.onPreExecute();
             progressDialog = new ProgressDialog(context);
             progressDialog.setTitle("Syncing...");
+            progressDialog.setCancelable(false);
             progressDialog.show();
         }
 

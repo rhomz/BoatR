@@ -3,8 +3,6 @@
     android:layout_height="match_parent" tools:context="com.example.hpc.myday5.BasicInfoDone">
 
     <!-- TODO: Update blank fragment layout -->
-
-
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
@@ -135,11 +133,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
-                    android:layout_marginTop="@dimen/margin_top"
+                    android:layout_marginTop="50dp"
                     android:textColor="#ff000000"
                     android:textStyle="bold"
                     android:paddingLeft="10dp"
-                    android:layout_below="@id/txtView_NameOfOwner"/>
+                    android:layout_below="@id/lbl_NameOfOwner"/>
 
                 <TextView
                     android:text="Blk 4 Lot 105 Area H Sapang Palay San Jose Del Monte Bulacan"
@@ -163,7 +161,7 @@
                     android:paddingLeft="10dp"
                     android:layout_marginTop="@dimen/margin_top"
                     style="@style/title_text"
-                    android:layout_below="@+id/txtOwnerAddress"/>
+                    android:layout_below="@+id/txtview_address"/>
 
                 <TextView
                     android:id="@+id/txtview_homeport"
@@ -171,8 +169,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/text_size"
-                    android:padding="10dp"
-                    android:paddingLeft="5dp"
+                    android:paddingLeft="10dp"
                     android:singleLine="true"
                     android:layout_below="@+id/lbl_Homeport"/>
 
@@ -184,9 +181,7 @@
                     android:layout_marginRight="@dimen/abc_text_size_small_material"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:layout_marginTop="15dp"
-
                     android:paddingLeft="10dp"
                     android:layout_below="@+id/txtview_homeport"/>
 
@@ -248,7 +243,7 @@
                     android:paddingLeft="10dp"
                     android:singleLine="true"
                     android:layout_below="@+id/textView_YearBuilt"
-                    android:layout_marginLeft="130dp"
+                    android:layout_marginLeft="155dp"
                     />
 
 
@@ -281,7 +276,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/title_text"
-                    android:layout_below="@+id/txtview_vesselType"
+                    android:layout_below="@+id/txtview_vesseltype"
                     />
 
                 <TextView
@@ -441,9 +436,6 @@
                     </TableRow>
                 </TableLayout>
             </LinearLayout>
-
-
-
 
             <LinearLayout
                 android:id="@+id/layout3"
@@ -612,9 +604,5 @@
 
 
     </ScrollView>
-
-
-
-
 
 </FrameLayout>

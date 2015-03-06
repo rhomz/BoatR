@@ -51,7 +51,7 @@ public class FtpSender {
     //String JsonUrl = "http://122.55.5.206:83/api/"; //for testing bfar public api
 
     //local api ni aries
-    String JsonUrl = "http://192.168.1.106/api/";
+    String JsonUrl = "http://192.168.1.106:82/api/sender.php";
 
     public FtpSender(Context context, Object object) {
         this.context = context;
@@ -118,21 +118,17 @@ public class FtpSender {
 
         try {
             con = new FTPClient();
-            //con.connect("122.55.5.206", 21); //122.55.5.206
+           con.connect("192.168.1.106", 21); //122.55.5.206
                                              //ftpmanager
                                              //bf@rf+p
 
             //local api
-            con.connect("192.168.1.106", 21);
 
-            /*if (con.login("ftpmanager", "bf@rf+p")) {
-                con.enterLocalPassiveMode(); // important!
-                con.setFileType(FTP.BINARY_FILE_TYPE);*/
-
-            //lcoal api
             if (con.login("bfar-pc", "abc123")) {
                 con.enterLocalPassiveMode(); // important!
                 con.setFileType(FTP.BINARY_FILE_TYPE);
+
+
 
                 if (num == 1) {
                     File files[] = Environment.getExternalStorageDirectory().listFiles();
@@ -204,14 +200,16 @@ public class FtpSender {
 
             // Execute the request in the client
             HttpResponse httpResponse = defaultClient.execute(httpGetRequest);
+
+            Log.e(TAG,"Response ************************************** "+httpResponse.getStatusLine().getStatusCode());
             // Grab the response
             BufferedReader reader = new BufferedReader(new InputStreamReader(httpResponse.getEntity().getContent(), "UTF-8"));
             String json = reader.readLine();
 
             // Instantiate a JSON object from the request response
-            JSONObject jsonObject = new JSONObject(json);
+            JSONObject jsonObjectx = new JSONObject(json);
 
-            ans = jsonObject.getString("message");
+            ans = jsonObjectx.getString("message");
             if (ans != null) {
                 SendToFtp(num, filename);
             }

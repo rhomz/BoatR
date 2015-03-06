@@ -20,7 +20,7 @@
             android:padding="10dp"
             android:textStyle="bold"
             android:textSize="35sp"
-            android:text="Welcome to BFAR BOAT Registration Mobile Application"
+            android:text="Welcome to BFAR Municipal Fishing Vessel and Gear Registration Mobile Application"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 

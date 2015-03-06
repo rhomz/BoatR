@@ -259,6 +259,7 @@ public class BoatRActivity extends ActionBarActivity
             super.onPreExecute();
             progressDialog = new ProgressDialog(context);
             progressDialog.setTitle("Checking connection on BFAR-CO(Server)...");
+            progressDialog.setCancelable(false);
             progressDialog.show();
         }
 
@@ -307,14 +308,15 @@ public class BoatRActivity extends ActionBarActivity
         @Override
         protected String doInBackground(FisherFolk... params) {
             getJson(getTopValue());
+            FtpSender ftpSender = new FtpSender(context,new BoatRegistration());
+            ftpSender.SendToFtp(1,null);
             return null;
         }
 
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-           FtpSender ftpSender = new FtpSender(context,new BoatRegistration());
-            ftpSender.SendToFtp(1,null);
+
 
         }
 
@@ -429,6 +431,7 @@ public class BoatRActivity extends ActionBarActivity
             super.onPreExecute();
             progressDialog = new ProgressDialog(context);
             progressDialog.setTitle("Checking Internet Connection...");
+            progressDialog.setCancelable(false);
             progressDialog.show();
         }
 
@@ -476,6 +479,7 @@ public class BoatRActivity extends ActionBarActivity
             super.onPreExecute();
             progressDialog = new ProgressDialog(this.context);
             progressDialog.setTitle("Downloading FisherFolk Data...");
+            progressDialog.setCancelable(false);
             progressDialog.show();
         }
 

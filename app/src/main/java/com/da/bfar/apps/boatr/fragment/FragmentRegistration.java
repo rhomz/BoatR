@@ -142,11 +142,17 @@ public class FragmentRegistration extends Fragment {
     }
 
     @Override
+    public void onPause() {
+        MySingleton.getInstance().getFragmentTabBus().unregister(this);
+        super.onPause();
+    }
+
+    /*@Override
     public void onDestroy() {
         MySingleton.getInstance().getFragmentTabBus().unregister(this);
         super.onDestroy();
     }
-
+*/
     @Subscribe
     public void receivedFeedback(Bundle bundle){
         Log.e("Fragment Registration Status:", "Fragment");

@@ -93,6 +93,7 @@ private Button done;
                 Bundle temp = new Bundle();
                 temp.putBoolean("status", false);
                 temp.putInt("fragment", 5);
+                temp.putBoolean("isFromFragment",true);
                 MySingleton.getInstance().getFragmentTabBus().post(temp);
             }
         });
@@ -127,6 +128,7 @@ private Button done;
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Init(view);
+        setData();
     }
 
     public void Init(View view){
@@ -157,7 +159,7 @@ private Button done;
         mfvrNo = (TextView)view.findViewById(R.id.txtview_mfvrno);
         typeOfRegistration = (TextView)view.findViewById(R.id.txtview_typeofregistration);
         dateOfApplication = (TextView)view.findViewById(R.id.txtview_date);
-        nameOfOwner = (TextView)view.findViewById(R.id.txtview_nameofowner);
+        nameOfOwner = (TextView)view.findViewById(R.id.txtView_NameOfOwner);
         address = (TextView)view.findViewById(R.id.txtview_address);
         homeport = (TextView)view.findViewById(R.id.txtview_homeport);
         nameOfFishingVessel = (TextView)view.findViewById(R.id.txtview_fishingvessel);
@@ -178,7 +180,7 @@ private Button done;
         grossTonnage = (TextView)view.findViewById(R.id.txtview_gtonnage);
         netTonnage = (TextView)view.findViewById(R.id.txtview_ntonnage);
 
-        mfvrNo.setText("WEHEHEH :)");
+//        mfvrNo.setText("WEHEHEH :)");
     }
     public void setData(){
         typeOfRegistration.setText(BoatrSingleton.getInstance().getBoatTypeOfRegistration());

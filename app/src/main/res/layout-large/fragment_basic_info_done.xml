@@ -60,6 +60,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
                     <TextView
+                        android:id="@+id/txtview_mfvrno"
                         android:layout_weight="1"
                         android:text="SYSTEM GENERATED"
                         android:layout_toRightOf="@+id/txtview_mfvrno"

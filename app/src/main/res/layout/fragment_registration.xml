@@ -1,0 +1,43 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bfar_pc.main.Registration">
+
+    <!--<com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="#ff51adff" />-->
+
+    <com.da.bfar.apps.boatr.utils.PagerSlidingTabStripNoViewPager
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background= "#2196f3"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/container_"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        tools:context=".MainActivity"
+        >
+    </FrameLayout>
+    <!--<android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabs"
+        tools:context=".MainActivity" />-->
+    <!--<com.da.bfar.apps.boatr.BoatRCustomizeViewpager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabs">
+    </com.da.bfar.apps.boatr.BoatRCustomizeViewpager>-->
+</RelativeLayout>

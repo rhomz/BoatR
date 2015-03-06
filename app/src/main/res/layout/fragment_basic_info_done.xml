@@ -1,0 +1,468 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.hpc.myday5.BasicInfoDone">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TableLayout
+            android:id="@+id/tbl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow>
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:text="MUNICIPAL FISHING VESSEL AND GEAR REGISTRATION"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    style="@style/CustomFont"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="MFVR NO."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000" />
+                <TextView
+                    android:id="@+id/txtview_mfvrno"
+                    android:text="MFVR NO."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="TYPE OF REGISTRATION "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:id="@+id/txtview_typeofregistration"
+                    android:text="TYPE OF REGISTRATION "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="DATE :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:id="@+id/txtview_date"
+                    android:text="DATE :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="NAME OF OWNER :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:id="@+id/txtview_nameofowner"
+                    android:text="NAME OF OWNER :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="ADDRESS :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:id="@+id/txtview_address"
+                    android:text="Ako ay may alaga asong mataba buhok nya ay mahaba, Si jez ay bading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:maxEms="10"
+                    android:singleLine="false"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="HOMEPORT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:id="@+id/txtview_homeport"
+                    android:text="HOMEPORT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="NAME OF FISHING VESSEL :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:id="@+id/txtview_fishingvessel"
+                    android:text="NAME OF FISHING VESSEL :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="PLACE BUILT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:id="@+id/txtview_placebuilt"
+                    android:text="PLACE BUILT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="YEAR BUILT :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:id="@+id/txtview_yearbuilt"
+                    android:text="YEAR BUILT :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="VESSEL TYPE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:id="@+id/txtview_vesseltype"
+                    android:text="VESSEL TYPE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="MATERIAL USED :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:id="@+id/txtview_materialused"
+                    android:text="MATERIAL USED :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                android:layout_below="@+id/layout2"
+                android:id="@+id/tvTitleDimension"
+                android:text="FISHING VESSEL DIMENSIONS(in meter)AND TONNAGES"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff3678ff"
+                android:textColor="#ffffff"
+                android:layout_marginTop="@dimen/margin_top"
+                android:padding="5dp"
+                android:textStyle="italic"
+                style="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_span="2"
+                />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="REGISTERED LENGTH :   "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:id="@+id/txtview_rlength"
+                    android:text="REGISTERED LENGTH :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="REGISTERED BREADTH :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:text="REGISTERED BREADTH :"
+                    android:id="@+id/txtview_rbreadth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="REGISTERED DEPTH :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:text="REGISTERED DEPTH :"
+                    android:id="@+id/txtview_rdepth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="TONNAGE LENGTH :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:text="TONNAGE LENGTH :"
+                    android:id="@+id/txtview_tlength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="TONNAGE BREADTH :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:text="TONNAGE BREADTH :"
+                    android:id="@+id/txtview_tbreadth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="TONNAGE DEPTH :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:text="TONNAGE DEPTH :"
+                    android:id="@+id/txtview_tdepth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="GROSS TONNAGE :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:text="GROSS TONNAGE :"
+                    android:id="@+id/txtview_gtonnage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="NET TONNAGE :  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:text="NET TONNAGE :"
+                    android:id="@+id/txtview_ntonnage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_below="@+id/layout4"
+                    android:id="@+id/tvparticulars"
+                    android:text="PARTICULARS OF PROPULSION SYSTEM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff3678ff"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textStyle="italic"
+                    android:padding="5dp"
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_span="2"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="ENGINE MAKE :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"
+                    />
+                <TextView
+                    android:text="ENGINE MAKE :"
+                    android:id="@+id/txtview_enginemake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="SERIAL NUMBER :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:text="SERIAL NUMBER :     "
+                    android:id="@+id/txtview_serialnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="HORSE POWER :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="#ff000000"/>
+                <TextView
+                    android:text="HORSE POWER :"
+                    android:id="@+id/txtview_horsepower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_below="@+id/layout5"
+                    android:id="@+id/tvClassification"
+                    android:text="CLASSIFICATION OF FISHING GEAR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff3678ff"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:padding="5dp"
+                    android:textStyle="italic"
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_span="2"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_below="@+id/tvClassification"
+                    android:id="@+id/txtview_classification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:layout_span="2"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:text="DONE"
+                    android:id="@+id/btnNext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:background="@drawable/blue_button"
+                    android:layout_below="@+id/txtview_classification"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:layout_marginLeft="500dp"
+
+                    android:layout_span="2"/>
+            </TableRow>
+
+            </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+</FrameLayout>

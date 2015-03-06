@@ -1,0 +1,106 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boat"
+    android:paddingLeft="@dimen/abc_text_size_large_material"
+    android:paddingRight="@dimen/abc_text_size_large_material">
+
+    <ImageView
+        android:id="@+id/bfarLogo"
+        android:src="@drawable/bfarlogo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtHeader1"
+        android:text="MUNICIPAL FISHING VESSEL AND"
+        android:layout_below="@+id/bfarLogo"
+        android:gravity="center"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtHeader2"
+        android:text="GEAR REGISTRATION SYSTEM"
+        android:layout_below="@+id/txtHeader1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/boatrLogo"
+        android:src="@drawable/boatr"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/txtHeader2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/EDITTEXT_username"
+        android:hint="USERNAME"
+        android:layout_below="@+id/boatrLogo"
+        android:layout_marginLeft="@dimen/abc_text_size_small_material"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="true"/>
+
+    <EditText
+        android:id="@+id/EDITTEXT_password"
+        android:inputType="textPassword"
+        android:hint="PASSWORD"
+        android:layout_below="@id/EDITTEXT_username"
+        android:layout_marginLeft="@dimen/abc_text_size_small_material"
+        android:layout_marginTop="@dimen/abc_text_size_small_material"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/BUTTON_login"
+        android:text="LOGIN"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/EDITTEXT_password"
+        android:layout_marginTop="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:background="#ffeaeaea"
+        android:hapticFeedbackEnabled="true"
+        android:layout_width="300dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/txtFIMC"
+        android:text="Developed by: Fisheries Information Management Center"
+        android:layout_below="@id/BUTTON_login"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="BFAR - FIMC 2015"
+        android:layout_below="@id/txtFIMC"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.da.bfar.apps.boatr.fragment.FragmentGearRegistration">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/boatRForm"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+            <TextView
+                android:id="@+id/gearHeader"
+                android:text="GEAR REGISTRATION"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:textStyle="bold"
+                android:background="#ff5689ff"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:padding="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/mainInfo"
+                android:layout_below="@+id/gearHeader">
+                <LinearLayout
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/info"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/lblmfvrNo"
+                        android:text="MFVR NO.:"
+                        style="@style/title_text"
+                        android:paddingLeft="10dp"
+                        android:layout_weight=".5"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mfvrNo"
+                        android:layout_toRightOf="@+id/lblmfvrNo"
+                        android:hint="MFVR NO.sample"
+                        android:textSize="@dimen/text_size"
+                        android:layout_marginTop="10dp"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/info2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/info"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblName"
+                        android:text="NAME OF OWNER :"
+                        style="@style/title_text"
+                        android:layout_weight=".38"
+                        android:layout_marginRight="0dp"
+                        android:paddingLeft="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nameOfOwner"
+                        android:textSize="@dimen/text_size"
+                        android:layout_toRightOf="@+id/lblName"
+                        android:hint="Name of Owner"
+                        android:textColor="#ff0b011d"
+                        android:layout_weight=".5"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/info3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/info2"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblAddress"
+                        android:text="ADDRESS :"
+                        style="@style/title_text"
+                        android:paddingLeft="10dp"
+                        android:layout_weight=".42"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/address"
+                        android:textSize="23dp"
+                        android:layout_toRightOf="@+id/lblAddress"
+                        android:textColor="#ff0b011d"
+                        android:hint="Address"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/main"
+                android:orientation="horizontal"
+                android:layout_below="@+id/mainInfo"
+                style="@style/Base.TextAppearance.AppCompat.Large.Inverse">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gearChecklist1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gearChecklist2"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="15dp">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bodyButton"
+                android:orientation="horizontal"
+                android:layout_marginLeft="400dp"
+                android:layout_below="@+id/main"
+                android:layout_alignParentRight="true">
+                <Button
+                    android:id="@+id/btnSave_Gear"
+                    android:text="SAVE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size"
+                    android:background="@drawable/btn_login_rounded_view"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\training\day1\BoatR\SignaturePad-Library\res"><file path="C:\training\day1\BoatR\SignaturePad-Library\res\values\attrs.xml" qualifiers=""><declare-styleable name="SignaturePad">
+        <attr format="float" name="minWidth"/>
+        <attr format="float" name="maxWidth"/>
+        <attr format="color" name="penColor"/>
+        <attr format="float" name="velocityFilterWeight"/>
+    </declare-styleable></file></source><source path="C:\training\day1\BoatR\SignaturePad-Library\build\generated\res\rs\debug"/><source path="C:\training\day1\BoatR\SignaturePad-Library\build\generated\res\generated\debug"/></dataSet><dataSet config="debug"><source path="C:\training\day1\BoatR\SignaturePad-Library\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="SignaturePad"><attr format="float" name="minWidth"/><attr format="float" name="maxWidth"/><attr format="color" name="penColor"/><attr format="float" name="velocityFilterWeight"/></declare-styleable></configuration></mergedItems></merger>

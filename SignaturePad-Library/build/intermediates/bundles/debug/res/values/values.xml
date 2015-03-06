@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SignaturePad"><attr format="float" name="minWidth"/><attr format="float" name="maxWidth"/><attr format="color" name="penColor"/><attr format="float" name="velocityFilterWeight"/></declare-styleable>
+</resources>

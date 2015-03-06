@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hpc.myday5.BoatRFormEngine">
+
+    <!-- TODO: Update blank fragment layout -->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+   <TextView
+       android:text="Particulars of Propulsion System"
+       android:id="@+id/tvTitle"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       style="@style/Base.TextAppearance.AppCompat.Headline"
+       android:background="#ff5689ff"
+       android:textColor="#ffffff"
+       android:padding="8dp"
+      />
+    <TextView
+        android:text="Engine Make:"
+        android:id="@+id/tvEngine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="@dimen/margin_top"/>
+    <Spinner
+        android:id="@+id/spinnerEngine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"></Spinner>
+        <TextView
+            android:text="Serial"
+            android:id="@+id/tvSerial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"/>
+        <EditText
+            android:id="@+id/etSerial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"/>
+        <TextView
+            android:text="Horse Power"
+            android:id="@+id/tvHorsePower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"/>
+        <Spinner
+            android:id="@+id/spinnerHorsePower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"></Spinner>
+        <Button
+            android:text="Add Another"
+            android:id="@+id/btnAddNew"
+            android:textSize="@dimen/text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button"
+            style="@style/button_text"/>
+
+        <TextView
+            android:text="Engine Make:"
+            android:id="@+id/tvEngine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"/>
+        <Spinner
+            android:id="@+id/spinnerEngine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin_top"></Spinner>
+        <TextView
+            android:text="Serial"
+            android:id="@+id/tvSerial2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"/>
+        <EditText
+            android:id="@+id/etSerial2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin_top"/>
+        <TextView
+            android:text="Horse Power"
+            android:id="@+id/tvHorsePower2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"/>
+        <Spinner
+            android:id="@+id/spinnerHorsePower2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin_top"></Spinner>
+        <TextView
+            android:text="Cancel"
+            android:id="@+id/tvCancel"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#ff0504ff"
+            android:textStyle="italic"
+            android:layout_marginTop="@dimen/margin_top"/>
+        <Button
+            android:text="NEXT"
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button"
+            style="@style/button_text"
+            android:textSize="@dimen/text_size"
+            android:layout_marginLeft="500dp"/>
+    </LinearLayout>
+</ScrollView>
+
+</FrameLayout>

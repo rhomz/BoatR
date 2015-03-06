@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_drop_shadow_white"
+    android:padding="15dp"
+    android:layout_margin="15dp"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/FListView"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FisherFolkName"
+        android:textSize="22sp"
+        android:layout_centerInParent="true"
+        android:hint="test"
+        android:text="Juan Dela Cruz"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FisherFolkAddress"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:hint="test"
+        android:text="Brgy. Poblacion 2, Quezon City Phil."
+        android:textStyle="italic"
+        />
+    <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/CFRNo"
+       android:textSize="18sp"
+       android:hint="test"
+        android:text="BOH-0001"
+        android:textStyle="bold"
+        />
+</LinearLayout>
+
+
+</LinearLayout>

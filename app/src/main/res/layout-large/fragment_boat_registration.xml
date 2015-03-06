@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+            <TextView
+                android:text="MUNICIPAL FISHING VESSEL AND GEAR REGISTRATION"
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:textStyle="bold"
+                android:background="#ff5689ff"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:padding="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/textView_MFVRNo"
+                        android:text="MFVR No.:"
+                        style="@style/title_text"
+
+                        android:layout_marginRight="@dimen/abc_text_size_small_material"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DATE OF APPLICATION:"
+                        style="@style/title_text"
+                       android:paddingTop="10dp"
+
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="SYSTEM GENERATED"
+                        android:layout_toRightOf="@+id/textView_MFVRNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size"
+                        android:paddingLeft="10dp"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtDateOfApplication"
+                        android:text=" February 14, 2015"
+                        android:textSize="@dimen/text_size"
+                        />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:text="TYPE OF REGISTRATION:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                style="@style/title_text"
+                android:paddingLeft="10dp"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:id="@+id/rgTypeOfRegistration">
+
+                <RadioButton
+                    android:id="@+id/radioButton_Initial"
+                    android:text="Initial Registration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:layout_weight=".10" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_ReIssuance"
+                    android:text="Re-Issuance of New Certificate Number(CN)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:textStyle="italic"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton_Issuance"
+                    android:text="Issuance of New Certificate Number(CN)"
+                    android:textStyle="italic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_NameOfOwner"
+                    android:text="NAME OF OWNER:"
+                    android:layout_marginRight="@dimen/abc_text_size_small_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    style="@style/title_text"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/editText_NameOfOwner"
+                    android:layout_toRightOf="@+id/textView_NameOfOwner"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="KHRIZEL D. TORRES"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic"
+                    />
+
+                <TextView
+                    android:id="@+id/textView_AddressOfOwner"
+                    android:text="ADDRESS:"
+                    android:layout_marginRight="@dimen/abc_text_size_small_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    style="@style/title_text"
+                    android:paddingLeft="10dp"/>
+
+                <TextView
+                    android:text="Blk 4 Lot 105 Area H Sapang Palay San Jose Del Monte Bulacan"
+                    android:id="@+id/txtOwnerAddress"
+                    android:layout_toRightOf="@+id/textView_AddressOfOwner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:maxEms="15"
+                    android:singleLine="false"
+                    android:textStyle="italic"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+            <TextView
+
+                android:id="@+id/textView_Homeport"
+                android:text="HOMEPORT:"
+                android:layout_marginRight="@dimen/abc_text_size_small_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/title_text"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="@dimen/margin_top"
+                />
+
+            <EditText
+                android:id="@+id/editText_Homeport"
+                android:hint="Homeport"
+                android:layout_toRightOf="@+id/textView_Homeport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text"
+                style="@style/customized_textfield"
+                android:singleLine="true"/>
+
+
+            <TextView
+                android:id="@+id/textView_NameFV"
+                android:text="NAME OF FISHING VESSEL:"
+                android:layout_marginRight="@dimen/abc_text_size_small_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/title_text"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/editText_NameFV"
+                android:hint="Name of Fishing Vessel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/customized_textfield"
+                android:background="@drawable/edit_text"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/textView_PlaceBuilt"
+                android:text="PLACE BUILT:"
+                android:layout_marginRight="@dimen/abc_text_size_small_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                style="@style/title_text"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/editText_PlaceBuilt"
+                android:hint="Place Built"
+                android:layout_toRightOf="@+id/textView_PlaceBuilt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/customized_textfield"
+                android:background="@drawable/edit_text"
+                android:singleLine="true"/>
+
+
+            <TextView
+                android:id="@+id/textView_YearBuilt"
+                android:text="YEAR BUILT:"
+                android:layout_marginRight="@dimen/abc_text_size_small_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/title_text"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_yearBuilt"
+                android:entries="@array/yearBuilt"
+                android:layout_toRightOf="@id/textView_YearBuilt"
+                android:layout_width="match_parent"
+                android:textSize="25dp"
+                android:spinnerMode="dialog"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_height="45dp"
+
+                />
+
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:text="VESSEL TYPE:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                style="@style/title_text"/>
+
+
+
+            <RadioGroup
+
+                android:paddingLeft="@dimen/abc_text_size_small_material"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:weightSum="1"
+                android:id="@+id/rgVesselType"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioButton_NonMotorized"
+                    android:text="Non-Motorized"
+                    android:layout_marginRight="@dimen/abc_text_size_small_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:textStyle="italic"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton_Motorized"
+                    android:text="Motorized"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:textStyle="italic"
+                    />
+
+            </RadioGroup>
+
+
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="MATERIAL USED:"
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <LinearLayout
+                android:id="@+id/cbMaterialUsed"
+                android:layout_marginTop="@dimen/abc_text_size_small_material"
+                android:layout_marginRight="@dimen/abc_text_size_small_material"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <!-- <CheckBox
+                     android:id="@+id/checkbox_Wood"
+                     android:text="Wood"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight=".33"
+                     />
+
+                 <CheckBox
+                     android:id="@+id/checkbox_FiberGlass"
+                     android:text="Fiber Glass"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight=".33"
+                     />
+
+                 <CheckBox
+                     android:id="@+id/checkbox_Composite"
+                     android:text="Composite"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight=".33"
+                     />-->
+
+            </LinearLayout>
+
+            <Button
+
+                android:id="@+id/btn_boat_registration_next"
+                android:text="NEXT"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:background="@drawable/btn_login_rounded_view"
+                style="@style/button_text"
+                android:layout_marginTop="@dimen/margin_top"/>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:text="CANCEL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:background="@drawable/blue_button"
+                style="@style/button_text"
+                android:layout_marginTop="@dimen/margin_top"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

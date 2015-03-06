@@ -1,0 +1,619 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.hpc.myday5.BasicInfoDone">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:text="MUNICIPAL FISHING VESSEL AND GEAR REGISTRATION"
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:textStyle="bold"
+                android:background="#ff5689ff"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:padding="8dp"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/textView_MFVRNo"
+                        android:text="MFVR No.:"
+                        style="@style/title_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DATE OF APPLICATION:"
+                        style="@style/title_text"
+
+
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="SYSTEM GENERATED"
+                        android:layout_toRightOf="@+id/txtview_mfvrno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size"
+                        android:paddingLeft="10dp"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtview_date"
+                        android:text=" February 14, 2015"
+                        android:textSize="@dimen/text_size"
+                        />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:text="TYPE OF REGISTRATION:"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/margin_top"
+                style="@style/title_text"
+                android:paddingLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/txtview_typeofregistration"
+                android:hint=" TypeOfRegistration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:textSize="@dimen/text_size"
+
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutAddress">
+
+                <TextView
+                    android:id="@+id/lbl_NameOfOwner"
+                    android:text="NAME OF OWNER:"
+                    android:layout_marginRight="@dimen/abc_text_size_small_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    style="@style/title_text"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txtView_NameOfOwner"
+                    android:layout_toRightOf="@+id/txtview_nameofowner"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="KHRIZEL D. TORRES"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic"
+                    android:layout_below="@+id/lbl_NameOfOwner"
+                    />
+
+                <TextView
+                    android:id="@+id/textView_AddressOfOwner"
+                    android:text="ADDRESS:"
+                    android:layout_marginRight="@dimen/abc_text_size_small_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@id/txtView_NameOfOwner"/>
+
+                <TextView
+                    android:text="Blk 4 Lot 105 Area H Sapang Palay San Jose Del Monte Bulacan"
+                    android:id="@+id/txtview_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:maxEms="15"
+                    android:singleLine="false"
+                    android:textStyle="italic"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@+id/textView_AddressOfOwner"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/lbl_Homeport"
+                    android:text="HOMEPORT:"
+                    android:layout_marginRight="@dimen/abc_text_size_small_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="@dimen/margin_top"
+                    style="@style/title_text"
+                    android:layout_below="@+id/txtOwnerAddress"/>
+
+                <TextView
+                    android:id="@+id/txtview_homeport"
+                    android:hint="Homeport"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:padding="10dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:layout_below="@+id/lbl_Homeport"/>
+
+
+                <TextView
+                    style="@style/title_text"
+                    android:id="@+id/lbl_NameFV"
+                    android:text="NAME OF FISHING VESSEL:"
+                    android:layout_marginRight="@dimen/abc_text_size_small_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:paddingLeft="10dp"
+                    android:layout_below="@+id/txtview_homeport"/>
+
+                <TextView
+                    android:id="@+id/txtview_fishingvessel"
+                    android:hint="Name of Fishing Vessel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:padding="10dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:layout_below="@id/lbl_NameFV"/>
+
+                <TextView
+                    style="@style/title_text"
+                    android:id="@+id/lbl_PlaceBuilt"
+                    android:text="PLACE BUILT:"
+                    android:layout_marginRight="@dimen/abc_text_size_small_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@+id/txtview_fishingvessel"/>
+
+                <TextView
+                    android:id="@+id/txtview_placebuilt"
+                    android:hint="Place Built"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:layout_below="@+id/lbl_PlaceBuilt"/>
+
+
+                <TextView
+                    android:id="@+id/textView_YearBuilt"
+                    android:text="YEAR BUILT:"
+                    android:layout_marginRight="@dimen/abc_text_size_small_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_text"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_toRightOf="@+id/lbl_PlaceBuilt"
+                    android:layout_below="@id/txtview_vesseltype"
+                    android:layout_marginLeft="130dp"/>
+
+                <TextView
+                    android:id="@+id/txtview_yearbuilt"
+                    android:hint="YearBuilt"
+                    android:layout_toRightOf="@+id/txtview_placebuilt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:layout_below="@+id/textView_YearBuilt"
+                    android:layout_marginLeft="130dp"
+                    />
+
+
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:text="VESSEL TYPE:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    style="@style/title_text"
+                    android:id="@+id/lbl_vesselType"
+                    android:layout_below="@+id/txtview_placebuilt"/>
+                <TextView
+                    android:id="@+id/txtview_vesseltype"
+                    android:hint="Vessel Type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:padding="10dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:layout_below="@id/lbl_vesselType"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:id="@+id/lbl_materialUsed"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="MATERIAL USED:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/title_text"
+                    android:layout_below="@+id/txtview_vesselType"
+                    />
+
+                <TextView
+                    android:id="@+id/txtview_materialused"
+                    android:hint="Material used"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:padding="10dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:layout_below="@id/lbl_materialUsed"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+                <TextView
+                    android:text="FISHING DIMENSION AND TONNAGE"
+                    android:id="@+id/title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:textStyle="bold"
+                    android:background="#ff5689ff"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+                    <TableRow>
+                        <TextView
+                            android:text="REGISTERED LENGTH:   "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            style="@style/title_text"/>
+                        <TextView
+                            android:id="@+id/txtview_rlength"
+                            android:text="sample length"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="REGISTERED BREADTH:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            style="@style/title_text"/>
+                        <TextView
+                            android:text="Sample Breadth"
+                            android:id="@+id/txtview_rbreadth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="REGISTERED DEPTH:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            style="@style/title_text"/>
+                        <TextView
+                            android:text="Sample Depth"
+                            android:id="@+id/txtview_rdepth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="TONNAGE LENGTH:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            style="@style/title_text"/>
+                        <TextView
+                            android:text="Tonnage Length"
+                            android:id="@+id/txtview_tlength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="TONNAGE BREADTH:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            style="@style/title_text"
+                            />
+                        <TextView
+                            android:text="Tonnage Breadth"
+                            android:id="@+id/txtview_tbreadth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="TONNAGE DEPTH:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            style="@style/title_text"/>
+                        <TextView
+                            android:text="Tonnage Depth"
+                            android:id="@+id/txtview_tdepth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="GROSS TONNAGE:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            style="@style/title_text"/>
+                        <TextView
+                            android:text="Gross Tonnage"
+                            android:id="@+id/txtview_gtonnage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="NET TONNAGE:  "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            style="@style/title_text"/>
+                        <TextView
+                            android:text="Net Tonnage"
+                            android:id="@+id/txtview_ntonnage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+                <TextView
+                    android:text="PARTICULARS OF PROPULSION"
+                    android:id="@+id/Title3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:textStyle="bold"
+                    android:background="#ff5689ff"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    />
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+                    <TableRow>
+                        <TextView
+                            android:text="ENGINE MAKE:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:layout_marginRight="70dp"
+                            style="@style/title_text"
+                            />
+                        <TextView
+                            android:text="Engine Make"
+                            android:id="@+id/txtview_enginemake"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"
+                            />
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="SERIAL NUMBER:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            style="@style/title_text"/>
+                        <TextView
+                            android:text="Serial Number"
+                            android:id="@+id/txtview_serialnumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="HORSE POWER:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            style="@style/title_text"/>
+                        <TextView
+                            android:text="Horse Power"
+                            android:id="@+id/txtview_horsepower"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"/>
+                    </TableRow>
+                    <TableRow android:id="@+id/tblrow_enginemake2">
+                        <TextView
+                            android:text="2ND ENGINE MAKE :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+
+                            style="@style/title_text"
+                            />
+                        <TextView
+                            android:text="2ND ENGINE MAKE :"
+                            android:id="@+id/txtview_enginemake2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"
+                            />
+                    </TableRow>
+                    <TableRow android:id="@+id/tblrow_serialnumber2">
+                        <TextView
+                            android:text="2ND SERIAL NUMBER :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+
+                            style="@style/title_text"/>
+                        <TextView
+                            android:text="2ND SERIAL NUMBER :     "
+                            android:id="@+id/txtview_serialnumber2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"/>
+                    </TableRow>
+
+                    <TableRow android:id="@+id/tblrow_horsepower2">
+                        <TextView
+                            android:text="2ND HORSE POWER :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+
+                            style="@style/title_text"/>
+                        <TextView
+                            android:text="2ND HORSE POWER :"
+                            android:id="@+id/txtview_horsepower2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top"
+                            android:textSize="@dimen/text_size"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+                <TextView
+                    android:text="CLASSIFICATION OF GEARS"
+                    android:id="@+id/Title4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:textStyle="bold"
+                    android:background="#ff5689ff"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    />
+                <TextView
+                    android:layout_below="@+id/tvClassification"
+                    android:id="@+id/txtview_classification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    />
+                <Button
+                    android:text="DONE"
+                    android:id="@+id/btnNext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size"
+                    android:background="@drawable/btn_login_rounded_view"
+                   />
+
+             </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>

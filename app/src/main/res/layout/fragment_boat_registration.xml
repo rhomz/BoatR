@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout
+    android:id="@+id/layout1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="MUNICIPAL FISHING VESSEL AND GEAR REGISTRATION"
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:background="#ff5689ff"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:padding="8dp"
+        />
+
+<TableLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableRow>
+        <TextView
+        android:id="@+id/textView_MFVRNo"
+        android:text="MFVR No.:"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginRight="@dimen/abc_text_size_small_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:textColor="#ff000000"/>
+        <TextView
+            android:text="SYSTEM GENERATED"
+            android:layout_toRightOf="@+id/textView_MFVRNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE OF APPLICATION:"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textColor="#ff000000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDateOfApplication"
+            android:text=" date"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"
+            />
+    </TableRow>
+    </TableLayout>
+  <TextView
+        android:text="TYPE OF REGISTRATION:"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="@dimen/margin_top"
+      android:textColor="#ff000000"
+        />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:weightSum="1"
+            android:id="@+id/rgTypeOfRegistration"
+
+            >
+
+                <RadioButton
+                    android:id="@+id/radioButton_Initial"
+                    android:text="Initial Registration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".10"
+                    android:layout_gravity="start"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton_ReIssuance"
+                    android:text="Re-Issuance of New Certificate Number(CN)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton_Issuance"
+                    android:text="Issuance of New Certificate Number(CN)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".40"
+                    android:layout_gravity="end"
+                    />
+
+        </RadioGroup>
+<TableLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableRow>
+        <TextView
+            android:id="@+id/textView_NameOfOwner"
+            android:text="NAME OF OWNER:"
+            android:layout_marginRight="@dimen/abc_text_size_small_material"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textColor="#ff000000"/>
+
+        <TextView
+            android:id="@+id/editText_NameOfOwner"
+            android:layout_toRightOf="@+id/textView_NameOfOwner"
+            android:layout_width="fill_parent"
+            android:text="KHRIZEL D. TORRES"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/textView_AddressOfOwner"
+            android:text="ADDRESS:"
+            android:layout_marginRight="@dimen/abc_text_size_small_material"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textColor="#ff000000"/>
+
+        <TextView
+            android:text="Blk 4 Lot 105 Area H Sapang Palay San Jose Del Monte Bulacan"
+            android:id="@+id/txtOwnerAddress"
+            android:layout_toRightOf="@+id/textView_AddressOfOwner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"
+            android:maxEms="15"
+            android:singleLine="false"/>
+    </TableRow>
+    </TableLayout>
+        <TextView
+            android:id="@+id/textView_Homeport"
+            android:text="HOMEPORT:"
+            android:layout_marginRight="@dimen/abc_text_size_small_material"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textColor="#ff000000"/>
+
+        <EditText
+            android:id="@+id/editText_Homeport"
+            android:hint="Homeport"
+            android:layout_toRightOf="@+id/textView_Homeport"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"/>
+
+
+        <TextView
+            android:id="@+id/textView_NameFV"
+            android:text="NAME OF FISHING VESSEL:"
+            android:layout_marginRight="@dimen/abc_text_size_small_material"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textColor="#ff000000"/>
+
+        <EditText
+            android:id="@+id/editText_NameFV"
+            android:hint="Name of Fishing Vessel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"/>
+
+
+
+
+        <TextView
+            android:id="@+id/textView_PlaceBuilt"
+            android:text="PLACE BUILT:"
+            android:layout_marginRight="@dimen/abc_text_size_small_material"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textColor="#ff000000"/>
+
+        <EditText
+            android:id="@+id/editText_PlaceBuilt"
+            android:hint="Place Built"
+            android:layout_toRightOf="@+id/textView_PlaceBuilt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"/>
+
+
+        <TextView
+            android:id="@+id/textView_YearBuilt"
+            android:text="YEAR BUILT:"
+            android:layout_marginRight="@dimen/abc_text_size_small_material"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textColor="#ff000000"/>
+
+        <Spinner
+            android:id="@+id/spinner_yearBuilt"
+            android:entries="@array/yearBuilt"
+            android:layout_toRightOf="@id/textView_YearBuilt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:layout_marginTop="@dimen/margin_top"/>
+
+
+
+    <TextView
+
+        android:text="VESSEL TYPE:"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="#ff000000"/>
+
+
+
+        <RadioGroup
+
+            android:paddingLeft="@dimen/abc_text_size_small_material"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:weightSum="1"
+            android:id="@+id/rgVesselType"
+            >
+
+                <RadioButton
+                    android:id="@+id/radioButton_NonMotorized"
+                    android:text="Non-Motorized"
+                    android:layout_marginRight="@dimen/abc_text_size_small_material"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton_Motorized"
+                    android:text="Motorized"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    />
+
+        </RadioGroup>
+
+
+
+    <TextView
+        android:textSize="@dimen/text_size"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="MATERIAL USED:"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbMaterialUsed"
+        android:orientation="horizontal"
+        ></LinearLayout>
+
+    <Button
+
+        android:id="@+id/btnCancel"
+        android:text="CANCEL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:background="@drawable/blue_button"
+        style="@style/button_text"
+        android:layout_marginTop="@dimen/margin_top"/>
+ </LinearLayout>
+ </ScrollView>
+</FrameLayout>

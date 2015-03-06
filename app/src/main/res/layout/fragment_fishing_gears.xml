@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bfar_pc.boatrproject.FishingGearsFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/boatRForm"
+
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+            <TextView
+                android:text="CLASSIFICATION OF FISHING GEAR"
+                android:id="@+id/gearHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:textStyle="bold"
+                android:background="#ff5689ff"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:padding="8dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="#ff0b011d"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/mainInfo"
+                android:layout_below="@+id/gearHeader">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/main"
+                android:orientation="horizontal"
+                android:layout_below="@+id/gearHeader">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checklist1"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checklist2"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp">
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:layout_below="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_login_rounded_view"
+                android:id="@+id/btnNext_fishingGear"
+                android:text="NEXT"
+                style="@style/title_text"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
